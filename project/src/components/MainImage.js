@@ -5,9 +5,12 @@ const MainImage = props => {
     <div>
       Coming Soon !
 
+      {/* <img src={} /> */}
+
       <button 
         className="button"
-        onClick={() => {     
+        onClick={() => { 
+            props.getDog();    
         }}
       >Dog</button>
 

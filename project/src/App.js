@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import MainImage from './components/MainImage';
+import { getDog } from './actions/Actions';
+import { connect } from 'react-redux';
 
 import axios from 'axios';
 
 import './App.css';
 
-function App() {
+const App = props => {
 
   //Initial test getting dogs and cats images
   const [dog, setDog] = useState();
@@ -38,19 +40,34 @@ function App() {
       });
   }, []);  
 
+  const getDogImage = () => {
+    props.getDog()
+  };
+
   return (
     <div className="App">
 
       <div>Redux Cats or Dogs</div>
 
-      <img src={dog} />;
+      {/* <img src={dog} />;
 
-      <img src={cat} />;
+      <img src={cat} />; */}
 
-      <MainImage />
+      <MainImage getDog = {getDogImage}/>
       
     </div>
   );
 }
 
-export default App;
+const dispatchToProps = {
+  getDog
+};
+
+const mapStateToProps = state => {
+  return {
+    dog: state.dog,
+    cat: state.cat
+  };
+};
+
+export default connect(mapStateToProps,dispatchToProps)(App)

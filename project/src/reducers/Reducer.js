@@ -5,16 +5,16 @@ const initialState = {
     dog: {
       
       image:
-        'https://na.com/na.jpg',
+        '',
       
     },
 
     cat: {
       
-        image:
-          'https://na.com/na.jpg',
-        
-      }
+    image:
+        '',
+    
+    }
     
   };
 
