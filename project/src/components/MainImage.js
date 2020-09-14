@@ -10,7 +10,8 @@ const MainImage = props => {
       <button 
         className="button"
         onClick={() => { 
-            props.getDog();    
+            // props.getDog(); 
+            console.log(props)   
         }}
       >Dog</button>
 
