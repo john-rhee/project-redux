@@ -2,18 +2,10 @@ import { GET_DOG, GET_CAT } from '../actions/Actions.js'
 
 const initialState = {
 
-    dog: {
-      
-      image:
-        '',
-      
+    dog: {    
     },
 
-    cat: {
-      
-    image:
-        '',
-    
+    cat: {   
     }
     
   };
@@ -23,7 +15,8 @@ const initialState = {
 
         case GET_DOG:
         return {
-            ...state
+            ...state,
+            dog: {image: action.payload}
         }
 
         case GET_CAT:

@@ -16,13 +16,14 @@ export const getCat = argument => {
 
 export const getDog = () => dispatch => {
     
-    axios()
+    axios
         .get('https://dog.ceo/api/breeds/image/random')
         .then(res => {
             console.log('get dog res',res)
-            dispatch({type:GET_DOG,payload:res.data})
+            dispatch({type:GET_DOG,payload:res.data.message})
         })
         .catch(error => {
+            
             dispatch({type:GET_FAILURE,payload:error})
     })
     

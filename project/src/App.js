@@ -44,6 +44,8 @@ const App = props => {
     props.getDog()
   };
 
+  console.log(props.dog)
+
   return (
     <div className="App">
 
@@ -52,6 +54,8 @@ const App = props => {
       {/* <img src={dog} />;
 
       <img src={cat} />; */}
+
+      <img src={props.dog} />;
 
       <MainImage getDog = {getDogImage}/>
       
