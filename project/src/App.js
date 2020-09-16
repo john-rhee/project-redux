@@ -97,7 +97,7 @@ const App = props => {
 
       {props.koreanLang  ? 
       
-        <h3 className="title2">개 아니면 고양이를 골라주세요</h3>
+        <h3 className="title2">좋아하는 동물을 골라주세요</h3>
 
         : (
           
