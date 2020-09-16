@@ -9,21 +9,7 @@ const MainImage = props => {
 
     <div>
 
-      <div>
-        {props.allState.dogOn ? 
-          <img src={props.dogImg.image}/>
-         : (
-          <div/>
-        )}
-      </div>
-
-      <div>
-        {props.allState.catOn ? (
-          <img src={props.catImg.image}/>
-        ) : (
-          <div/>
-        )}
-      </div>
+      
 
       {/* <img src={props.dogImg.image} />
       <img src={props.catImg.image} /> */}
@@ -54,7 +40,7 @@ const MainImage = props => {
         onClick={() => { 
             props.getDog();   
         }}
-        >난 개가 더 좋아</button>
+        >나는 개가 더 좋아</button>
 
         )}
 
@@ -80,7 +66,7 @@ const MainImage = props => {
         onClick={() => { 
             props.getDog();   
         }}
-        >I choose a dog</button>
+        >I like dogs</button>
 
         )}
 
@@ -140,7 +126,7 @@ const MainImage = props => {
         onClick={() => { 
             props.getCat();   
         }}
-        >I choose a cat</button>
+        >I like cats</button>
 
         )}
       </div>
@@ -199,14 +185,28 @@ const MainImage = props => {
         onClick={() => { 
             props.getBoth();   
         }}
-        >I choose both</button>
+        >I like both</button>
 
         )}
       </div>
 
     )}
 
-      
+      <div>
+        {props.allState.dogOn ? 
+          <img className="upImage" src={props.dogImg.image}/>
+          : (
+          <div/>
+        )}
+      </div>
+
+      <div>
+        {props.allState.catOn ? (
+          <img className="upImage" src={props.catImg.image}/>
+        ) : (
+          <div/>
+        )}
+      </div>
 
     </div>
   );

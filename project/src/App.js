@@ -87,21 +87,21 @@ const App = props => {
 
       {props.koreanLang  ? 
       
-        <div>개 고양이 리덧스 프로그램</div>
+        <h1 className="title">개 와 고양이 리덕스 앱</h1>
 
         : (
           
-        <div>Redux Cats or Dogs</div>
+        <h1 className="title">REDUX CATS OR DOGS APP</h1>
 
       )}
 
       {props.koreanLang  ? 
       
-        <div>개 아니면 고양이를 골라주세요</div>
+        <h3 className="title2">개 아니면 고양이를 골라주세요</h3>
 
         : (
           
-        <div>Choose a dog or a cat</div>
+        <h3 className="title2">Which do you like more ? A dog or a cat ?</h3>
 
       )}
 

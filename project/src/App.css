@@ -36,3 +36,136 @@
     transform: rotate(360deg);
   }
 }
+
+.upImage {
+      
+  width: 30%;
+  margin: 20px;
+  
+}
+
+.button {
+      
+  color: white;
+  background: #4C8FFB;
+  border: 1px #3079ED solid;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 9pt;
+  outline: none;
+  box-shadow: inset 0 1px 0 #80B0FB;
+  margin: 5px;
+  
+}
+
+.button:hover {
+  border: 1px #2F5BB7 solid;
+  box-shadow: 0 1px 1px #EAEAEA, inset 0 1px 0 #5A94F1;
+  background: #3F83F1;
+}
+
+.title {
+
+  font-family: 'Fredoka One';
+
+}
+
+.title2 {
+
+  font-family: 'Raleway', sans-serif;
+
+}
+
+@media(max-width: 1800px){
+
+  .upImage {
+      
+    width: 50%;
+    
+  }
+
+}  
+
+@media(max-width: 850px){
+
+  .upImage {
+      
+    width: 60%;
+    
+  }
+
+}  
+
+@media(max-width: 610px){
+
+  .title {
+
+    font-size: 35px;
+  
+  }
+
+  .title2 {
+
+    font-size: 20px;
+  
+  }
+
+} 
+
+@media(max-width: 485px){
+
+  .title {
+
+    font-size: 30px;
+  
+  }
+
+  .title2 {
+
+    font-size: 15px;
+  
+  }
+
+} 
+
+@media(max-width: 400px){
+
+  .title {
+
+    font-size: 25px;
+  
+  }
+
+  .title2 {
+
+    font-size: 15px;
+  
+  }
+
+  .upImage {
+      
+    width: 90%;
+    
+  }
+
+} 
+
+@media(max-width: 285px){
+
+  .title {
+
+    font-size: 20px;
+  
+  }
+
+  .title2 {
+
+    font-size: 14px;
+  
+  }
+
+} 
+
+
+
