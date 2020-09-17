@@ -87,7 +87,7 @@ const App = props => {
 
       {props.koreanLang  ? 
       
-        <h1 className="title">개 와 고양이 리덕스 앱</h1>
+        <h1 className="titleKor">개 와 고양이 리덕스 앱</h1>
 
         : (
           
